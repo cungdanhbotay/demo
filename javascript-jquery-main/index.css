@@ -1,0 +1,198 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  max-width: 100%;
+  min-height: 800px !important;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px auto;
+  gap: 80px;
+}
+
+nav {
+  height: 100%;
+  background-color: #DFD3C3;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.fa-filter {
+  padding-top: 10px !important;
+}
+
+.fa-filter {
+  height: 100% !important;
+}
+
+.user__name {
+  width: 180px !important;
+}
+
+.nav-menu {
+  height: 80px;
+}
+.nav-menu--item {
+  list-style: none;
+  margin: 10px 0;
+}
+.nav-menu--item :hover {
+  color: #7D6E83;
+}
+.nav-menu--item {
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+.nav-menu--item__a {
+  color: #182747 !important;
+}
+
+.fa-filter {
+  background-color: #D800A6 !important;
+}
+
+.msg {
+  font-size: 20px;
+  width: 220px;
+}
+
+.userLayout--title {
+  padding: 20px;
+}
+
+.select {
+  padding-top: 10px;
+}
+
+.input__filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active {
+  background-color: #ff0000 !important;
+}
+
+.btn-search {
+  min-height: 6px !important;
+  margin-left: 15px;
+}
+
+.input-search {
+  outline: none;
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  border: 1px solid #182747;
+}
+
+.filter__select {
+  outline: none;
+  width: 150px !important;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #182747;
+}
+
+#panigate-list {
+  cursor: pointer;
+}
+
+.panigate-list {
+  display: flex;
+  margin: 0 auto;
+}
+.panigate-list li {
+  list-style: none;
+  padding: 10px 15px;
+  background-color: #D800A6;
+  margin: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+.panigate-list li:hover {
+  background: #182747;
+}
+.panigate-list .number-page {
+  display: flex;
+}
+
+.float-end {
+  margin-bottom: 20px;
+}
+
+.userLayout--title {
+  text-transform: uppercase;
+}
+
+.btn-search {
+  background-color: #D800A6 !important;
+}
+
+.btnMultiple {
+  padding: 10px 12px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #D800A6 !important;
+}
+.btnMultiple:hover {
+  background-color: #c60d0d;
+}
+
+table {
+  border-bottom: 1px solid #182747;
+}
+table thead {
+  border-bottom: 1px solid #888;
+}
+table tr {
+  line-height: -100%;
+}
+table tr td {
+  width: 100px !important;
+}
+
+#filter__select--acitve {
+  width: 150px !important;
+}
+
+.user__name p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#input__paginate {
+  width: 50px;
+  height: 35px;
+  margin: 0 15px;
+  text-align: center;
+}
+
+#quantityRemove {
+  font-weight: 500;
+  width: 10px;
+  padding: 10px;
+  text-overflow: clip;
+  margin: 20px;
+}
+
+.js__avatar {
+  max-height: 30px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#css__img {
+  border: 1px solid #555;
+}
+
+/*# sourceMappingURL=index.css.map */

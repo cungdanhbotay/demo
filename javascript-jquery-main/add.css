@@ -1,0 +1,85 @@
+#message__name,
+#message__email,
+#message__username,
+#message__phoneNumber,
+#message__password,
+#message__re-password,
+#total__message,
+#message__phone_number {
+  padding: 10px;
+  color: red;
+}
+
+.form-label {
+  font-weight: 600 !important;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  max-width: 100%;
+  min-height: 900px !important;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px auto;
+  gap: 80px;
+}
+
+.js__add {
+  background-color: #888 !important;
+}
+
+.btn {
+  color: #fff !important;
+}
+
+nav {
+  height: 100%;
+  background-color: #DFD3C3;
+}
+
+.nav-menu {
+  height: 80px;
+}
+.nav-menu--item {
+  list-style: none;
+  margin: 10px 0;
+}
+.nav-menu--item :hover {
+  color: #7D6E83;
+}
+.nav-menu--item {
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+.nav-menu--item__a {
+  color: #182747 !important;
+}
+
+@media screen and (max-width: 560px) {
+  body {
+    font-size: 12px !important;
+  }
+  body nav {
+    background-color: #fff !important;
+    display: none !important;
+  }
+  body ul > li {
+    font-size: 14px !important;
+  }
+  body .layout_form {
+    display: block !important;
+  }
+  body .menu {
+    color: #000 !important;
+    display: block !important;
+    font-size: 22px !important;
+  }
+}
+
+/*# sourceMappingURL=add.css.map */
