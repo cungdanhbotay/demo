@@ -1,0 +1,231 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #888;
+}
+
+header .row1 {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid #888;
+  border-left: 8px solid #f7922c;
+}
+header .row1--left {
+  display: flex;
+  gap: 20px;
+}
+header .row1 .Title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+  color: black;
+}
+header .row1 .Synchronized {
+  display: flex;
+  gap: 10px;
+}
+header .row1 .Synchronized__btn {
+  padding: 8px 10px;
+  background-color: #fff;
+}
+header .row1 .Synchronized__time {
+  padding: 10px 0;
+}
+header .row1 .Update__btn {
+  padding: 11px;
+  background-color: #fff;
+}
+header .row1 .Add__btn {
+  padding: 11px;
+  margin: 0;
+  border: 2px solid #f7922c;
+  color: #f7922c;
+  background-color: #fff;
+}
+header .row1 .Add__ellipsis {
+  padding: 11px;
+  margin: 0;
+  border: 2px solid #f7922c;
+  color: #f7922c;
+  background-color: #fff;
+}
+
+header .row2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #888;
+}
+header .row2__left {
+  display: flex;
+  gap: 40px;
+}
+header .row2__left--status {
+  padding: 10px;
+}
+header .row2__left--status i {
+  margin: 0 10px;
+}
+header .row2__left--status .fa-lock {
+  color: red;
+}
+header .row2__left--search--input {
+  border: 2px solid #888;
+  padding: 10px 30px;
+  border-radius: 20px;
+  width: 250px;
+  position: relative;
+  z-index: 1;
+}
+header .row2 .icon__search {
+  position: absolute;
+  z-index: 10;
+  top: 88px;
+  left: 25px;
+  color: #888;
+}
+header .row2__right {
+  padding: 10px;
+}
+header .row2__right select {
+  cursor: pointer;
+  border: 0 !important;
+}
+
+header .row3 {
+  padding: 10px 15px;
+  border-bottom: 1px solid #888;
+}
+header .row3__category {
+  position: relative;
+}
+header .row3 .fa-xmark {
+  position: absolute;
+  color: #888;
+  border: 1px solid #888;
+  font-size: 10px;
+  border-radius: 50%;
+  padding: 2px;
+  height: 5px;
+  width: 5px;
+  text-align: center;
+}
+header .row3 .fa-xmark:hover {
+  cursor: pointer;
+}
+
+header .row4 {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #888;
+}
+header .row4 .selectAll {
+  font-style: italic;
+  color: blue;
+}
+header .row4 .selectAll:hover {
+  cursor: pointer;
+}
+
+main table {
+  width: 100%;
+}
+main table tr {
+  border: 2px solid black !important;
+}
+main table .col1 {
+  text-align: center;
+}
+main table .col2--name__title {
+  color: black;
+  font-weight: bold;
+}
+main table .col3 b {
+  color: black;
+}
+main table .col3--edit {
+  color: blue;
+  font-style: italic;
+}
+main table .col3--edit:hover {
+  cursor: pointer;
+}
+main table .col4 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 32px;
+}
+main table .col4 .radio {
+  border-radius: 50px;
+  border: 1px solid #0b9d57;
+}
+main table .col4 .update__btn {
+  padding: 8px 15px;
+}
+main table .col4 .remove {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #ccc;
+  border-left: 60px solid transparent;
+}
+main table .col4 .remove .fa-trash-can {
+  position: absolute;
+  font-size: 25px;
+  right: 55px;
+  opacity: 0.5;
+  top: 20px;
+}
+main table .col4 .remove .fa-trash-can:hover {
+  cursor: pointer;
+}
+main table .col4 .remove .fa-circle-check {
+  position: absolute;
+  right: 10px;
+  top: 60px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+footer p {
+  padding: 10px;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  list-style: none;
+  padding: 10px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: blue;
+}
+footer ul .active {
+  font-weight: 600;
+}
+footer ul .active a {
+  color: black;
+}
+
+.fa-circle-check {
+  color: #0b9d57;
+}
+
+button {
+  border-radius: 5px;
+  border: #888 1px solid;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

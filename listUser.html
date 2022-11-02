@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USERS</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        .d-none {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="min-vh-100">
+    <nav class="nav">
+        <ul class="nav-menu" id="nav-menu">
+        </ul>
+    </nav>
+    <main class="content">
+        <div class="userLayout">
+            <h2 class="userLayout--title fs-2 mb-8">User list</h2>
+            <div class="input__filter pb-5 border-bottom">
+                <div class=" ">
+                    <div class="d-flex ">
+                        <input type="text" id="input--search" class="input-search form-control"
+                            placeholder="Tìm kiếm ...">
+                        <button class="btn btn-search text-white" id="btn-search">
+                            <i title="Tìm kiếm sản phẩm" class="fa-solid fa-magnifying-glass"></i></button>
+                        <br>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <!-- <div> -->
+                    <div class="select d-flex">
+                        <select class="filter__select form-control" name="" id="filter__select">
+                            <option class="filter__select--options--sort" value="-latest_update_at" selected>Mới nhất
+                            </option>
+                            <option class="filter__select--options--sort" value="+latest_update_at">Cũ nhất</option>
+                        </select>
+                        <label for="filter__select">
+                            <i class="fa-solid btn fa-filter text-white rounded mx-2 mr-3"></i>
+                        </label>
+                    </div>
+                    <div class="select d-flex">
+                        <select class="filter__select form-control" name="" id="filter__select--acitve">
+                            <option class="filter__select--options--active" value="" selected>Tất cả</option>
+                            <option class="filter__select--options--active" value="1" >Đang hoạt động</option>
+                            <option class="filter__select--options--active" value="0">Ngừng hoạt động</option>
+                        </select>
+                        <label for="filter__select--acitve">
+                            <i class="fa-solid btn fa-filter  text-white rounded mx-2"></i></label>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="d-flex mt-4 justify-content-between">
+                <div>
+                    Tổng: <span class="totalRecord" id="totalRecord" aria-disabled="true"></span> user.
+                    <span class="quantityRemove" id="quantityRemove" aria-disabled="true"></span>
+                </div>
+                <div class="m-2">
+                    <a href="./add.html">
+                        <button class="btnMultiple btn  text-white" id="btnAdd"><i title="Thêm sản phẩm"
+                                class="fa-solid fa-plus"></i></button></a>
+                    <button class="btnMultiple btn text-white" id="btnMultiple">
+                        <i title="Xóa sản phẩm" class="fa-solid fa-trash-can"></i></button>
+                </div>
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col mx-auto my-0">
+                            <input type="checkbox" id="selectAll">
+                        </th>
+                        <th scope="col">User Name</th>
+                        <th scope="col">Avatar</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Phone Number</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="dipsplay" class="data-container">
+
+                </tbody>
+            </table>
+
+            <div class="panigate d-flex justify-content-between mt-4">
+                <div class="d-flex">
+                    <label for="input__paginate">Hiện thị:</label>
+                    <select class="products form-control" name="" id="input__paginate">
+                        <option class="products--options selected" value="15">15</option>
+                        <option class="products--options" value="30">30</option>
+                        <option class="products--options" value="50">50</option>
+                        <option class="products--options" value="100">100</option>
+                    </select>
+                    <p>sản phẩm / trang</p>
+                </div>
+                <div>
+                    <ul class="panigate-list mx-5" id="panigate-list">
+                    </ul>
+                </div>
+            </div>
+            <table>
+                <tbody>
+                    <tr id="template" class="d-none">
+                        <td class="checkboxs"><input type="checkbox" class="checkboxx" name="" id="">
+                        </td>
+                        <td class="user__name"></td>
+                        <td class="img"><img src="" id="css__img" width="30px" class=" border-3 rounded js__avatar" alt=""></td>
+                        <td class="name"></td>
+                        <td class="phone_number"><i class="fa-regular fa-pen-to-square"></i></td>
+                        <td class="gender"></td>
+                        <td class="is_active"></td>
+                        <td class="js__icon">
+                            <a href="#" class="a_edit "><i class="fa-solid fa-pen-to-square edit"></i></a>
+                            <i class="fa-solid fa-trash-can text-danger mx-2 remove p-2"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+
+</html>
